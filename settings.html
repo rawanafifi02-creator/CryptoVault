@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoVault - Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+  <div class="app-container">
+    
+    <!-- نفس القائمة الجانبية -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">CV</span>
+        <h2>CryptoVault</h2>
+      </div>
+
+      <nav class="menu">
+        <p class="menu-title">MAIN MENU</p>
+        <a href="index.html" class="menu-item">📊 Dashboard</a>
+        <a href="#" class="menu-item">📈 Markets</a>
+        <a href="#" class="menu-item">👛 Wallet</a>
+
+        <p class="menu-title">ACCOUNT</p>
+        <a href="settings.html" class="menu-item active">⚙️ Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <label for="theme-toggle" class="theme-btn">🌓 Switch Theme</label>
+        <a href="login.html" class="logout-btn">🚪 Logout</a>
+      </div>
+    </aside>
+
+    <!-- المحتوى الرئيسي للإعدادات -->
+    <div class="main-wrapper">
+      
+      <header class="topbar">
+        <div class="welcome-text">
+          <h1>Settings</h1>
+          <p>Manage your account preferences and security</p>
+        </div>
+
+        <div class="topbar-actions">
+          <input type="text" placeholder="🔍 Search..." class="search-box">
+          <button class="notif-btn">🔔</button>
+          <div class="user-profile">
+            <span class="avatar">AM</span>
+            <div>
+              <strong>Alex Morgan</strong>
+              <small>Pro Trader</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="settings-content">
+        
+        <!-- شريط التبويبات العلوي -->
+        <div class="settings-tabs">
+          <button class="tab-btn">Profile</button>
+          <button class="tab-btn">Security</button>
+          <button class="tab-btn">Notifications</button>
+          <button class="tab-btn active">Preferences</button>
+          <button class="tab-btn">Connected</button>
+        </div>
+
+        <!-- بطاقة إعدادات العرض -->
+        <div class="card settings-card">
+          <div class="settings-header">
+            <h3>Display Preferences</h3>
+            <span>Customize how the app looks and behaves</span>
+          </div>
+
+          <!-- القوائم المنسدلة الأربعة -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Currency</label>
+              <select class="form-select">
+                <option>USD - US Dollar</option>
+                <option>EUR - Euro</option>
+                <option>EGP - Egyptian Pound</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Language</label>
+              <select class="form-select">
+                <option>English</option>
+                <option>Arabic</option>
+                <option>French</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Timezone</label>
+              <select class="form-select">
+                <option>Eastern Time (ET)</option>
+                <option>Cairo Time (EET)</option>
+                <option>London (GMT)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Date Format</label>
+              <select class="form-select">
+                <option>MM/DD/YYYY</option>
+                <option>DD/MM/YYYY</option>
+                <option>YYYY-MM-DD</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- أزرار التبديل (Toggles) -->
+          <div class="toggle-list">
+            <div class="toggle-item">
+              <div>
+                <strong>Dark Mode</strong>
+                <small>Use dark theme for the interface</small>
+              </div>
+              <input type="checkbox" checked class="switch-input">
+            </div>
+
+            <div class="toggle-item">
+              <div>
+                <strong>Compact View</strong>
+                <small>Show more data with smaller elements</small>
+              </div>
+              <input type="checkbox" class="switch-input">
+            </div>
+          </div>
+
+          <!-- أزرار الحفظ وإعادة الضبط -->
+          <div class="settings-actions">
+            <button class="btn-primary">Save Preferences</button>
+            <button class="btn-secondary">Reset to Default</button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>

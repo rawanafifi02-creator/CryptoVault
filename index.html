@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoVault - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- زر مخفي لتبديل الوضع الليلي والنهاري بدون JavaScript -->
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+  <div class="app-container">
+    
+    <!-- القائمة الجانبية (Sidebar) -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">CV</span>
+        <h2>CryptoVault</h2>
+      </div>
+
+      <nav class="menu">
+        <p class="menu-title">MAIN MENU</p>
+        <a href="index.html" class="menu-item active">📊 Dashboard</a>
+        <a href="#" class="menu-item">📈 Markets</a>
+        <a href="#" class="menu-item">👛 Wallet</a>
+
+        <p class="menu-title">ACCOUNT</p>
+        <a href="settings.html" class="menu-item">⚙️ Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <label for="theme-toggle" class="theme-btn">🌓 Switch Theme</label>
+        <a href="login.html" class="logout-btn">🚪 Logout</a>
+      </div>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main-wrapper">
+      
+      <!-- الشريط العلوي (Navbar) -->
+      <header class="topbar">
+        <div class="welcome-text">
+          <h1>Dashboard</h1>
+          <p>Welcome back! Here's your portfolio overview.</p>
+        </div>
+
+        <div class="topbar-actions">
+          <input type="text" placeholder="🔍 Search..." class="search-box">
+          <button class="notif-btn">🔔</button>
+          <div class="user-profile">
+            <span class="avatar">AM</span>
+            <div>
+              <strong>Alex Morgan</strong>
+              <small>Pro Trader</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- منطقة البطاقات (Grid) -->
+      <main class="dashboard-content">
+        
+        <!-- 1. بطاقات الإحصائيات (4 بطاقات) -->
+        <section class="stats-grid">
+          <div class="card highlight-card">
+            <span>Total Balance</span>
+            <h3>$84,254.32</h3>
+            <small class="positive">+12.5% this month</small>
+          </div>
+          <div class="card">
+            <span>Total Profit</span>
+            <h3>$12,847.00</h3>
+            <small class="positive">+8.2% vs last week</small>
+          </div>
+          <div class="card">
+            <span>Pending Orders</span>
+            <h3>7</h3>
+            <small>3 buy, 4 sell</small>
+          </div>
+          <div class="card">
+            <span>Active Assets</span>
+            <h3>12</h3>
+            <small>Across 4 wallets</small>
+          </div>
+        </section>
+
+        <!-- 2. بطاقات العملات (بطاقتان) -->
+        <section class="crypto-grid">
+          <div class="card crypto-card">
+            <div class="card-header">
+              <h4>BTC/USD</h4>
+              <span class="badge positive">+3.24%</span>
+            </div>
+            <h3>$43,256.00</h3>
+            <div class="fake-chart">📊</div>
+          </div>
+
+          <div class="card crypto-card">
+            <div class="card-header">
+              <h4>ETH/USD</h4>
+              <span class="badge positive">+1.87%</span>
+            </div>
+            <h3>$2,284.50</h3>
+            <div class="fake-chart">📈</div>
+          </div>
+        </section>
+
+        <!-- 3. بطاقات إضافية (3 بطاقات) -->
+        <section class="bottom-grid">
+          <div class="card">
+            <h4>Asset Allocation</h4>
+            <p>BTC 55% • ETH 30% • Other 15%</p>
+          </div>
+          <div class="card">
+            <h4>Portfolio Health</h4>
+            <p class="positive">Excellent (92/100)</p>
+          </div>
+          <div class="card">
+            <h4>Risk Level</h4>
+            <p>Moderate</p>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>
