@@ -60,7 +60,78 @@
 
     <!-- Main Content -->
     <div class="main-wrapper">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="welcome-text">
+          <h1>Dashboard</h1>
+          <p>Welcome back! Here's your portfolio overview.</p>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="search-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" placeholder="Search..." class="search-input">
+          </div>
+          <button class="notif-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="notif-dot">3</span>
+          </button>
+          <div class="user-profile">
+            <span class="avatar">AM</span>
+            <div>
+              <strong>Alex Morgan</strong>
+              <small>Pro Trader</small>
+            </div>
+          </div>
+        </div>
+      </header>
       <main class="dashboard-content">
+        <!-- 0. Portfolio Overview & Asset Performance -->
+        <section class="overview-grid">
+          <div class="card">
+            <div class="section-head">
+              <h4>Portfolio Overview</h4>
+              <div class="pill-tabs">
+                <span class="pill active">1D</span>
+                <span class="pill">1W</span>
+                <span class="pill">1M</span>
+                <span class="pill">1Y</span>
+              </div>
+            </div>
+            <div class="area-chart-wrap">
+              <svg viewBox="0 0 300 90" class="area-svg">
+                <defs>
+                  <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#d99b52" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#d99b52" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <polygon fill="url(#goldGrad)" points="0,80 30,68 65,70 100,52 140,56 180,42 220,46 260,34 300,22 300,90 0,90"/>
+                <polyline fill="none" stroke="#d99b52" stroke-width="2.5" points="0,80 30,68 65,70 100,52 140,56 180,42 220,46 260,34 300,22"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="section-head">
+              <h4>Asset Performance</h4>
+              <div class="pill-tabs">
+                <span class="pill active">Weekly</span>
+                <span class="pill">Monthly</span>
+                <span class="pill">Yearly</span>
+              </div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-col"><div class="bar b-mint" style="height: 62px;"></div></div>
+              <div class="bar-col"><div class="bar b-mint" style="height: 52px;"></div></div>
+              <div class="bar-col"><div class="bar b-pink" style="height: 18px;"></div></div>
+              <div class="bar-col"><div class="bar b-mint" style="height: 68px;"></div></div>
+              <div class="bar-col"><div class="bar b-peach" style="height: 36px;"></div></div>
+              <div class="bar-col"><div class="bar b-peach" style="height: 32px;"></div></div>
+              <div class="bar-col"><div class="bar b-pink" style="height: 26px;"></div></div>
+            </div>
+          </div>
+        </section>
         
         <!-- 1. Stats Cards (2x2 Grid) -->
         <section class="stats-grid-2x2">
